@@ -6,6 +6,7 @@
 body {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    background: #fff url('imagens/fundo.png') repeat-x;
+   overflow-x: hidden;
 }
 
 #container {
@@ -58,7 +59,7 @@ ul {
    background: url('imagens/divisor.png') no-repeat left center;
 }
 
-#topo ul .primeiro a { /* Retirar o dividor do primeiro item do menu*/
+#topo ul .primeiro a { /* Retirar o divisor do primeiro item do menu*/
    background: none;
    border-radius: 2px;
 }
@@ -80,9 +81,73 @@ body.fotos #navegacao a#fotos {
 
 /*Barra Lateral*/
 
+#lateral ul a {
+   font-size: 0.9em;
+   padding: 3px;
+   line-height: 30px;
+   display: block;
+   color: #000;
+   text-decoration: none;
+   border-bottom: 1px solid #f3f3f3;
+}
 
+label {
+   display: block;
+   cursor: pointer;
+}
+
+input {
+   width: 140px;
+   padding: 5px ;
+   font-size: 0.9em;
+   background-color: #fff;
+}
+
+input.submit {
+   width: 80px;
+   margin-top: 5px;
+   color: #fff;
+   background-color: #b10333;
+   border: 2px solid #870529;
+   
+}
+
+#lateral ul a:hover {
+   background: url('imagens/marcador.png') no-repeat left center;
+   padding-left: 20px;
+   color: #a1a1a1;  
+}
 
 /*Fim Barra Lateral*/
+
+/*Barra de Notícias*/
+
+#lista-noticias li {
+   padding: 2px;
+   border-bottom: 1px solid #ccc;
+   height: 62px;
+}
+
+#lista-noticias li a h5 {
+   font-size: 14px;
+   color: #3e7ab9;
+}
+
+#lista-noticias li a img{
+   float: left;
+   margin: 5px;
+}
+
+#lista-noticias li a {
+   text-decoration: none;
+   font-size: 12px;
+}
+
+#lista-noticias li:hover {
+   background-color: #eee;
+}
+
+/* Fim da Barra de Notícias*/
 
 /* Fim da Barra de navegação*/
 
@@ -110,6 +175,7 @@ h3 {
    background-color: #294c71;
    color: #fff;
    padding: 5px;
+   border-radius: 2px;
 }
 
 .caixa-conteudo {
@@ -118,10 +184,29 @@ h3 {
    margin-top: 5px;
 }
 
-#primario {
+#primario { /*Conteúdo principal*/
    float: left;
    width: 270px;
    margin: 0 0 40px 195px;
+}
+
+h4 {
+   background-color: #de003e;
+   width: 200px;
+   padding: 3px;
+   border-radius: 2px;
+   margin-bottom: 5px;
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+}
+
+img {
+   border-radius: 2px;
+   margin-bottom: 5px;
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+#primario p a, #secundario p a {
+   color: #de003e;
 }
 
 #duas-colunas #primario {
@@ -132,7 +217,7 @@ h3 {
    width: 750px;
    margin: 0 0 40px 0;
 }
-
+   /*Fim conteúdo principal*/
 #secundario {
    float: left;
    width: 270px;
@@ -150,6 +235,5 @@ h3 {
    color: #fff;
    text-align: center;
    padding: 20px;
-   position: absolute;
    bottom: 0;
 }
