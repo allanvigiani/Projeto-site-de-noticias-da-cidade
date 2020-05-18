@@ -41,6 +41,7 @@ ul {
    margin-top: 30px;
    float: left;
    margin-top: 40px;
+   border-radius: 2px;
 }
 
 #topo ul li {
@@ -59,10 +60,12 @@ ul {
 
 #topo ul .primeiro a { /* Retirar o dividor do primeiro item do menu*/
    background: none;
+   border-radius: 2px;
 }
 
 #topo ul a:hover{
-   color: #69001d;
+   color: #69001d;  
+   border-radius: 2px;
 }
 
 body.home #navegacao a#home, 
@@ -71,7 +74,82 @@ body.fotos #navegacao a#fotos {
    color: #fff;
    background: #de003e;
    cursor: text;
+   border-radius: 2px;
 }
 /*Fim Barra topo*/
 
+/*Barra Lateral*/
+
+
+
+/*Fim Barra Lateral*/
+
 /* Fim da Barra de navegação*/
+
+/*Conteudos*/
+
+#conteudo {
+   background-color: #fefefeb7;
+   margin-top:40px;
+}
+
+#lateral {
+   float: left;
+   width: 180px;
+   margin: 0 0 40px -750px;
+}
+
+.caixa {
+   background: url('imagens/fundo-caixa.png');
+   margin: 10px 0;
+   padding: 5px;
+}
+
+h3 {
+   font-size: 1.1em;
+   background-color: #294c71;
+   color: #fff;
+   padding: 5px;
+}
+
+.caixa-conteudo {
+   background-color: #fff;
+   padding: 5px;
+   margin-top: 5px;
+}
+
+#primario {
+   float: left;
+   width: 270px;
+   margin: 0 0 40px 195px;
+}
+
+#duas-colunas #primario {
+   width: 555px;
+}
+
+#uma-coluna #primario {
+   width: 750px;
+   margin: 0 0 40px 0;
+}
+
+#secundario {
+   float: left;
+   width: 270px;
+   margin: 0 0 40px 15px;
+}
+
+/*Fim Conteudos*/
+
+/*Rodapé*/
+
+#rodape {
+   clear: both;
+   width: 100%;
+   background-color: #294c71;
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   position: absolute;
+   bottom: 0;
+}
